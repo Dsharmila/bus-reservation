@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>about</title>
+<script>
+function openWin() {
+    window.open("cansucc.html");
+}
+</script>
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: DarkCyan;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+<body style="background-color:#E6E6FA;">
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="home.html">Login</a></li>
+  <li><a href="registration.html">Registration</a></li>
+  <li><a href="booking.html">Booking</a></li>
+  <li><a href="cancellation.html">Cancellation</a></li>
+  <li><a href="history.html">Travel history</a></li>
+  <li><a href="booking.html">Availability check</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+<center>
+
+<h1 class="w3-center">WELCOME</h1>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="bus image4.jpg" style="width:80%">
+  <img class="mySlides" src="bus image5.jpg" style="width:80%">
+  <img class="mySlides" src="bus image6.jpeg" style="width:80%">
+  <img class="mySlides" src="bus image9.jpg" style="width:80%">
+  <img class="mySlides" src="bus image10.jpeg" style="width:80%">
+</div>
+<h2>FOR ANY HELP:</h2>
+<p>CONTACT:9087654321</p>
+<p>email:abctravels@gmail.com</p>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

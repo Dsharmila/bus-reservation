@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: DarkCyan;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+
+</head>
+<body bgcolor="#E6E6FA">
+
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="home.html">Logout</a></li>
+  <li><a href="registration.html">Registration</a></li>
+  <li><a href="booking.html">Booking</a></li>
+  <li><a href="cancellation.html">Cancellation</a></li>
+  <li><a href="history.html">Travel history</a></li>
+  <li><a href="booking.html">Availability check</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+<h2><center>BOOKING FORM</h2><center>
+<form action="display.php" method="post">
+<left><label><b>boarding</b></label>
+<input type="text" name="boarding"></left><br><br>
+<!----<select>
+  <option value=""></option>
+  <option value="vizag">vizag</option>
+  <option value="hyderabad">hyderabad</option>
+  <option value="banglore">banglore</option>
+  <option value="chennai">chennai</option>
+  <option value="vijayawada">vijayawada</option>
+</select>---->
+  
+<left><label><b>departure</b></label>
+<input type="text" name="departure"></left><br><br>
+<!----<select>
+  <option value=""></option>
+  <option value="vizag">vizag</option>
+  <option value="hyderabad">hyderabad</option>
+  <option value="banglore">banglore</option>
+  <option value="chennai">chennai</option>
+  <option value="vijayawada">vijayawada</option>
+</select>---->
+<left><label><b>dateofjourney</b></label>
+<input type="date" name="dateofjourney"></left><br><br>
+<br>
+<input type="submit" name="submit" value="submit">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login</title>
+<script>
+function openWin() {
+    window.open("booking.html");
+}
+function openWin1() {
+    window.open("registration.html");
+}
+</script>
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: DarkCyan;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+</head>
+<body style="background-color:#E6E6FA;">
+
+
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="registration.html">Registration</a></li>
+  <li><a href="booking.html">Availability check</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+<form action="signin.php" method="post">
+<center><h1>LOGIN PAGE</h1><center>
+
+<left><label><b>username</b></label>
+<input type="text" placeholder="Enter username" name="username" required></left>
+<br><br>
+
+<left><label><b>password</b></label>
+<input type="password" placeholder="Enter password" name="password" required></left>
+<br><br>
+<br><br><br>
+<input type="submit" name="submit" value="login">
+
+</form>
+</body>
+</html>
+
